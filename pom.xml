@@ -18,10 +18,19 @@
 	</dependencies>
 	<build>
 		<resources>
-           <resource>
-               <directory>src/main/resources/services</directory>
-               <targetPath>META-INF/services</targetPath>
-           </resource>
-       </resources>
-    </build>
+			<resource>
+				<directory>src/main/resources/services</directory>
+				<targetPath>META-INF/services</targetPath>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
