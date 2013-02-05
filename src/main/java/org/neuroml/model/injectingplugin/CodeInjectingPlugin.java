@@ -57,7 +57,7 @@ public class CodeInjectingPlugin extends AbstractParameterizablePlugin
 		for( ClassOutline co : model.getClasses() ) {		
 			
 			fname = tdir + File.separator + co.implClass.fullName();
-			System.err.println("Checking "+fname);
+			//System.err.println("Checking "+fname);
 			f = new File(fname);
 			if (f.exists()) {
 				System.err.println("     ** Injecting code:");
@@ -79,7 +79,7 @@ public class CodeInjectingPlugin extends AbstractParameterizablePlugin
 			}
 			else
 			{
-				System.err.println("File doesn't exist!");
+				//System.err.println("File doesn't exist!");
 			}
 		}		
 		return true;
