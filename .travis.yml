@@ -9,3 +9,9 @@ jdk:
   - openjdk8
   - openjdk10
   - openjdk11
+  
+  
+install:
+
+    - mvn install
+    - mvn dependency:tree
