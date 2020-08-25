@@ -15,5 +15,6 @@ install:
 
     - mvn install
     - mvn dependency:tree
-    - mvn clean
-    - mvn install -P geppetto  # Test version for use with Geppetto...
+    - env
+    - mvn clean install -Dgeppetto  # Test version for use with Geppetto...
+    - mvn dependency:tree -Dgeppetto

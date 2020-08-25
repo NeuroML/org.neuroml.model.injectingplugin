@@ -14,7 +14,13 @@
     
     <profiles>
         <profile>
-            <id>geppetto</id>
+            <id>geppetto-env-variable-set</id>    
+            <activation>
+                <property>
+                    <name>geppetto</name>  <!-- Activate this using env var: mvn install -Dgeppetto (this is required so all dependencies will have env variable set)-->
+                </property>
+            </activation>
+            
             <properties>
                 <version.org.jvnet.jaxb2_commons>0.9.3</version.org.jvnet.jaxb2_commons>
                 <version.org.jvnet.jaxb2.maven2>0.12.3</version.org.jvnet.jaxb2.maven2>
