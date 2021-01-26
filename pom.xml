@@ -5,37 +5,37 @@
     <artifactId>org.neuroml.model.injectingplugin</artifactId>
     <version>1.7.1</version>
     <packaging>bundle</packaging>
-    
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        
+
         <version.org.jvnet.jaxb2_commons>0.12.0</version.org.jvnet.jaxb2_commons>
         <version.org.jvnet.jaxb2.maven2>0.14.0</version.org.jvnet.jaxb2.maven2>
-        
+
         <!--  These versions will work with Geppetto
         <version.org.jvnet.jaxb2_commons>0.9.3</version.org.jvnet.jaxb2_commons>
         <version.org.jvnet.jaxb2.maven2>0.12.3</version.org.jvnet.jaxb2.maven2>
         -->
     </properties>
-    
+
     <profiles>
         <profile>
-            <id>geppetto-env-variable-set</id>    
+            <id>geppetto-env-variable-set</id>
             <activation>
                 <property>
                     <name>geppetto</name>  <!-- Activate this using env var: mvn install -Dgeppetto (this is required so all dependencies will have env variable set)-->
                 </property>
             </activation>
-            
+
             <properties>
                 <version.org.jvnet.jaxb2_commons>0.9.3</version.org.jvnet.jaxb2_commons>
                 <version.org.jvnet.jaxb2.maven2>0.12.3</version.org.jvnet.jaxb2.maven2>
             </properties>
         </profile>
     </profiles>
-    
+
     <dependencies>
-        <dependency>    
+        <dependency>
             <groupId>org.jvnet.jaxb2_commons</groupId>
             <artifactId>jaxb2-basics</artifactId>
             <version>${version.org.jvnet.jaxb2_commons}</version>
@@ -46,8 +46,8 @@
             <version>${version.org.jvnet.jaxb2.maven2}</version>
         </dependency>
     </dependencies>
-    
-    
+
+
     <build>
         <resources>
             <resource>
@@ -60,8 +60,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.0</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
             <plugin>
