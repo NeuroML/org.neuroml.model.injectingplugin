@@ -17,6 +17,21 @@ jobs:
         java-version: 11
         java-package: jdk
 
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install GH import
+      run: |
+        python -m pip install --upgrade pip
+        pip install ghp-import
+
     - name: Generate javadocs
       run: |
         mvn javadoc:javadoc
+
+    - name: Publish documentation on GH pages
+      run: |
+        ghp-import -f -m "Regenerate documentation" -b gh-pages -n -p target/site/apidocs
+
