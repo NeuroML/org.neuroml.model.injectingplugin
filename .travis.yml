@@ -1,9 +1,22 @@
-dist: trusty
+dist: xenial
 sudo: false
 
 language: java
 
 jdk:
-  - openjdk7
+  - oraclejdk11
+  
   - openjdk8
-  - oraclejdk8
+  - openjdk10
+  - openjdk11
+  
+  
+install:
+
+    - mvn install
+    - mvn dependency:tree
+    - env
+    
+    -  # Test version for use with Geppetto...
+    - if [[ $JAVA_HOME =~ .*1.8.* ]]; then echo "Building version for use with Geppetto"; mvn clean install -Dgeppetto; mvn dependency:tree -Dgeppetto; fi
+  
