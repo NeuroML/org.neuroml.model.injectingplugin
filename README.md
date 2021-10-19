@@ -1,7 +1,7 @@
 NeuroML JAXB Injecting Plugin
 =============================
 
-[![Travis CI](https://travis-ci.com/NeuroML/org.neuroml.model.injectingplugin.svg?branch=master)](https://travis-ci.com/NeuroML/org.neuroml.model.injectingplugin)
+[![Java CI with Maven](https://github.com/NeuroML/org.neuroml.model.injectingplugin/actions/workflows/ci.yml/badge.svg)](https://github.com/NeuroML/org.neuroml.model.injectingplugin/actions/workflows/ci.yml)
 [![GitHub](https://img.shields.io/github/license/NeuroML/org.neuroml.model.injectingplugin)](https://github.com/NeuroML/org.neuroml.model.injectingplugin/blob/master/LICENSE.lesser)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/NeuroML/org.neuroml.model.injectingplugin)](https://github.com/NeuroML/org.neuroml.model.injectingplugin/pulls)
 [![GitHub issues](https://img.shields.io/github/issues/NeuroML/org.neuroml.model.injectingplugin)](https://github.com/NeuroML/org.neuroml.model.injectingplugin/issues)
