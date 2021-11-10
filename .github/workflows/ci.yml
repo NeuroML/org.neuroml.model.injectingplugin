@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java: [ '8', '11']
+        java: [ '8' ] # only java 8 for experimental branch...
       fail-fast: False
 
     name: Test on Java ${{ matrix.Java }}
