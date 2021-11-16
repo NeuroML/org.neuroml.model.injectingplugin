@@ -12,13 +12,14 @@ on:
 jobs:
   build_and_test:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.runs-on }}
     strategy:
+      fail-fast: false
       matrix:
-        java: [ '8', '11']
-      fail-fast: False
+        java: [ '8', '11', '13', '15' ]
+        runs-on: [ubuntu-latest, macos-11, windows-latest]
 
-    name: Test on Java ${{ matrix.Java }}
+    name: Test on Java ${{ matrix.Java }} on ${{ matrix.runs-on }}
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK ${{ matrix.Java }}
@@ -31,5 +32,4 @@ jobs:
     - name: Further tests
       run: |
         pwd
-        ls -alt
         mvn dependency:tree
