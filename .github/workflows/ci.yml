@@ -32,5 +32,4 @@ jobs:
     - name: Further tests
       run: |
         pwd
-        ls -alt
         mvn dependency:tree
