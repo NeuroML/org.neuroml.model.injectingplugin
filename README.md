@@ -9,10 +9,11 @@ NeuroML JAXB Injecting Plugin
 [![Twitter Follow](https://img.shields.io/twitter/follow/NeuroML?style=social)](https://twitter.com/NeuroML)
 [![Gitter](https://badges.gitter.im/NeuroML/community.svg)](https://gitter.im/NeuroML/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-This Java JAXB plugin is used to inject supplementary code to the NeuroML 
+This Java JAXB plugin is used to inject supplementary code to the NeuroML
 classes during their generation from the schema.  
 
 This code is distributed under the terms of the GNU Lesser General Public License.
 
-API Documentation can be found [here](http://neuroml.github.io/org.neuroml.model.injectingplugin/index.html).
+API Documentation for this can be found [here](http://neuroml.github.io/org.neuroml.model.injectingplugin/index.html).
+
 
